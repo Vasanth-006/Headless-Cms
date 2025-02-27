@@ -6,11 +6,7 @@
   "dev": "concurrently \"npm run develop:strapi\" \"npm run develop:gatsby\" \"npm run storybook\"",
   "develop:strapi": "cd backend/my-strapi-project && npm run develop",
   "develop:gatsby": "cd backend/frontend && npm run develop",
-  "storybook": "cd frontend && npm run storybook",
-  "headless-build": "concurrently \"npm run build:strapi\" \"npm run build:gatsby\" \"npm run build:storybook\"",
-  "build:strapi": "cd backend/my-strapi-project && npm run build",
-  "build:gatsby": "cd backend/frontend && npm run build",
-  "build:storybook": "cd frontend && npm run build"
+  "storybook": "cd frontend && npm run storybook"
 }
 
 }
