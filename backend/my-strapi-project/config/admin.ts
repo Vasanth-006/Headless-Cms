@@ -1,4 +1,4 @@
-import { env } from "process";
+
 
 export default ({ env }) => ({
   auth: {
@@ -18,7 +18,4 @@ export default ({ env }) => ({
   },
 });
 
-console.log("ADMIN_JWT_SECRET:", process.env.ADMIN_JWT_SECRET);
-console.log("API_TOKEN_SALT:", process.env.API_TOKEN_SALT);
-console.log("TRANSFER_TOKEN_SALT:", process.env.TRANSFER_TOKEN_SALT);
 
