@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+  "dev": "concurrently \"npm run develop:strapi\" \"npm run develop:gatsby\" \"npm run storybook\"",
+  "develop:strapi": "cd backend/my-strapi-project && npm run develop",
+  "develop:gatsby": "cd backend/frontend && npm run develop",
+  "storybook": "cd frontend && npm run storybook"
+}
+}
+
+
