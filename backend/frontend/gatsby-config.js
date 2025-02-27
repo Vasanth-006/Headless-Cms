@@ -1,9 +1,13 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    apiUrl: 'https://headless-cms-1-nqq0.onrender.com', // Replace with your Strapi URL
   },
-  plugins: [],
-}
+  plugins: [
+    {
+      resolve: 'gatsby-source-strapi',
+      options: {
+        apiURL: 'https://headless-cms-1-nqq0.onrender.com', // Same here
+      },
+    },
+  ],
+};
