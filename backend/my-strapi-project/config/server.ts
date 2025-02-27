@@ -4,11 +4,7 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS',['myKeyA', 'myKeyB']),
   },
-  'users-permissions': {
-    config: {
-      jwtSecret: env('JWT_SECRET', 'QLYgaOtEj+LYiOLojoJ4jw=='),
-    },
-  },
+  
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },
