@@ -11,9 +11,14 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://vasanth-storybook1.netlify.app'], // Replace with your actual Netlify URL
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allow necessary HTTP methods
-      allowedHeaders: ['Content-Type', 'Authorization'],  // Allow necessary headers
+      origin: [
+        'https://vasanth-storybook1.netlify.app', // Your Netlify Storybook URL
+        'http://localhost:6006', // Local Storybook URL
+        'http://localhost:8000' // Gatsby local dev server
+      ],
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      credentials: true, // Allow cookies if needed
     },
   },
   {
