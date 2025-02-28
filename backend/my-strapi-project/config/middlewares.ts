@@ -12,8 +12,8 @@ export default [
     name: 'strapi::cors',
     config: {
       headers: "*",
-      origin: ["http://localhost:6006", "https://vasanth-storybook1.netlify.app"], 
-      methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+      origin: "*", 
+      // methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
       credentials: true,
     },
   },
