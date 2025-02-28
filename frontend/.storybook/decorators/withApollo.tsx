@@ -6,7 +6,7 @@ import React from "react";
 //  Create Apollo Client
 const client = new ApolloClient({
   // uri:"https:localhost:1337/graphql",
-  uri: "https://headless-cms-1-nqq0.onrender.com", // Change based on backend url needed
+  uri: "https://headless-cms-1-lehv.onrender.com", // Change based on backend url needed
   cache: new InMemoryCache(),
 });
 
