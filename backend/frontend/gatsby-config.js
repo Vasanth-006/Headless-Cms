@@ -7,7 +7,7 @@ module.exports = {
       resolve: 'gatsby-source-strapi',
       options: {
         apiURL: 'https://headless-cms-1-lehv.onrender.com', // Same here
-        collectionTypes: ['author', 'blog', 'category', 'user'],
+        collectionTypes: ['Author', 'Blog', 'Category'],
       },
     },
   ],

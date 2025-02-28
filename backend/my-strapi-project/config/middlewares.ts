@@ -12,7 +12,9 @@ export default [
     name: 'strapi::cors',
     config: {
       headers: "*",
-      origin: ["*"], // OR ["https://your-netlify-app.netlify.app"]
+      origin: ["http://localhost:6006", "https://vasanth-storybook1.netlify.app"], 
+      methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+      credentials: true,
     },
   },
   // we can also use it like this
